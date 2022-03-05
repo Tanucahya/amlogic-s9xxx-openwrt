@@ -11,11 +11,6 @@
 # Modify default theme（FROM uci-theme-bootstrap CHANGE TO luci-theme-material）
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 
-# Modify default theme（FROM uci-theme-bootstrap CHANGE TO luci-theme-tano）
-sed -i 's/luci-theme-bootstrap/luci-theme-tano/g' feeds/luci/collections/luci/Makefile
-
-# change hostname
-sed -i "s/ImmortalWrt/LYNX/g" package/base-files/files/bin/config_generate
 
 # change banner
 rm -rf ./package/emortal/default-settings/files/openwrt_banner
